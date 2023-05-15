@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Purple: hsl(259, 100%, 65%);
+  --Light_red: hsl(0, 100%, 67%);
+  --White: hsl(0, 0%, 100%);
+  --Off_white: hsl(0, 0%, 94%);
+  --Light_grey: hsl(0, 0%, 86%);
+  --Smokey_grey: hsl(0, 1%, 44%);
+  --Off_black: hsl(0, 0%, 8%);
+  --font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Light_grey);
+  font-family: var(--font-family);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 590px;
+  height: 440px;
+  border-radius: 20px 20px 30%;
+  background-color: var(--White);
+}
+main form {
+  display: flex;
+}
+main form div {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 5px;
+}
+main form label {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 0.6rem;
+  margin-bottom: 5px;
+  color: var(--Smokey_grey);
+}
+main form input {
+  cursor: pointer;
+  outline: 0;
+  width: 110px;
+  height: 45px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 15px;
+  margin-right: 10px;
+  border: 1px solid var(--Light_grey);
+  border-radius: 5px;
+}
+main form input:hover {
+  border: 1px solid var(--Purple);
+}
+main form input[type=number]::-webkit-inner-spin-button,
+main form input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+main #division {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+main #division hr {
+  cursor: pointer;
+  width: 90%;
+}
+main #division button {
+  cursor: pointer;
+  background-color: unset;
+  border: unset;
+}
+main #division button svg {
+  padding: 17px;
+  background-color: var(--Purple);
+  border-radius: 50%;
+}
+main #division button svg:hover {
+  background-color: var(--Off_black);
+}
+main #content {
+  margin-top: 10px;
+  border-radius: 20px 20px 30%;
+  line-height: 70px;
+}
+main #content h1 {
+  font-size: 4rem;
+  font-style: italic;
+}
+main #content strong {
+  color: var(--Purple);
+}
+
+/*# sourceMappingURL=style.css.map */
