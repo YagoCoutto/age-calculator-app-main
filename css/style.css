@@ -27,10 +27,12 @@ body {
 
 main {
   display: flex;
+  height: 440px;
+  width: 590px;
+  min-width: 500px;
   flex-direction: column;
   padding: 40px;
-  width: 590px;
-  height: 440px;
+  margin: 15px;
   border-radius: 20px 20px 30%;
   background-color: var(--White);
 }
@@ -69,6 +71,21 @@ main form input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+main form .fieldRequired {
+  top: 123px;
+  letter-spacing: 0.5px;
+  text-transform: unset;
+  font-style: italic;
+  font-size: 0.5rem;
+  margin: 5px;
+  color: red;
+}
+main form .P_Red {
+  color: red;
+}
+main form .required {
+  border: 1px solid red;
+}
 main #division {
   display: flex;
   flex-direction: row;
@@ -76,7 +93,7 @@ main #division {
 }
 main #division hr {
   cursor: pointer;
-  width: 90%;
+  min-width: 90%;
 }
 main #division button {
   cursor: pointer;
