@@ -92,8 +92,8 @@ main #division {
   align-items: center;
 }
 main #division hr {
-  cursor: pointer;
   min-width: 90%;
+  color: red;
 }
 main #division button {
   cursor: pointer;
